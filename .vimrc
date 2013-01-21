@@ -22,3 +22,6 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " tabn mapping
 noremap <silent> <S-Tab> :tabn<CR>
+
+" Mouse scrolling
+set mouse=nicr
