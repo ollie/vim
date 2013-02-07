@@ -10,7 +10,7 @@ set number
 " Show all whitespaces as a character
 set list
 
-" Invisible character colors 
+" Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
@@ -25,3 +25,9 @@ noremap <silent> <S-Tab> :tabn<CR>
 
 " Mouse scrolling
 set mouse=nicr
+
+" Disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
