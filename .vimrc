@@ -25,9 +25,3 @@ noremap <silent> <S-Tab> :tabn<CR>
 
 " Mouse scrolling
 set mouse=nicr
-
-" Disable arrow keys
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
