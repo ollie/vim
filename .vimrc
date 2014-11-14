@@ -74,4 +74,7 @@ set cursorline
 " Highlight search results, better than *?
 set hlsearch
 
+" Rulers!
+set colorcolumn=80,100
+
 colorscheme Monokai
