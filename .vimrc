@@ -77,4 +77,7 @@ set hlsearch
 " Rulers!
 set colorcolumn=80,100
 
+" Don't show the intro message
+set shortmess+=I
+
 colorscheme Monokai
