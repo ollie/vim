@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdtree'          " Side panel with file tree
 Plugin 'bling/vim-airline'            " Nifty bottom line
 Plugin 'flazz/vim-colorschemes'       " A lot of color schemes
 Plugin 'tpope/vim-fugitive'           " Git integration
+Plugin 'slim-template/vim-slim'       " Ruby Slim for vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
