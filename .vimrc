@@ -12,19 +12,23 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Plugin 'vim-ruby/vim-ruby'          " Who uses this?
-Plugin 'ervandew/supertab'            " Use <Tab> for competions
-Plugin 'tomtom/tlib_vim'              " Utility functions for SnipMate
-Plugin 'garbas/vim-snipmate'          " Snipptes for completions
-Plugin 'MarcWeber/vim-addon-mw-utils' " Probably some utility functions
-Plugin 'honza/vim-snippets'           " Snippets for SnipMate
-Plugin 'scrooloose/syntastic'         " Syntax checker
-Plugin 'rking/ag.vim'                 " ag searcher support
-Plugin 'scrooloose/nerdtree'          " Side panel with file tree
-Plugin 'bling/vim-airline'            " Nifty bottom line
-Plugin 'flazz/vim-colorschemes'       " A lot of color schemes
-Plugin 'tpope/vim-fugitive'           " Git integration
-Plugin 'slim-template/vim-slim'       " Ruby Slim for vim
+" Plugin 'vim-ruby/vim-ruby'              " Who uses this?
+Plugin 'ervandew/supertab'              " Use <Tab> for competions
+Plugin 'tomtom/tlib_vim'                " Utility functions for SnipMate
+Plugin 'garbas/vim-snipmate'            " Snipptes for completions
+Plugin 'MarcWeber/vim-addon-mw-utils'   " Probably some utility functions
+Plugin 'honza/vim-snippets'             " Snippets for SnipMate
+Plugin 'scrooloose/syntastic'           " Syntax checker
+Plugin 'rking/ag.vim'                   " ag searcher support, :Ag
+Plugin 'scrooloose/nerdtree'            " Side panel with file tree, :NERDTree
+Plugin 'bling/vim-airline'              " Nifty bottom line
+Plugin 'flazz/vim-colorschemes'         " A lot of color schemes
+Plugin 'tpope/vim-fugitive'             " Git integration, :Git ...
+Plugin 'slim-template/vim-slim'         " Ruby Slim for vim
+Plugin 'ntpeters/vim-better-whitespace' " Highlight and strip whitespace, :StripWhitespace
+Plugin 'ngmy/vim-rubocop'               " Rubocop integration, :RuboCop
+Plugin 'skalnik/vim-vroom'              " Test runner, :VroomRunTestFile
+Plugin 'tpope/vim-commentary'           " Comment out code, gc, gcc, :Commentary
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -80,5 +84,8 @@ set colorcolumn=80,100
 
 " Don't show the intro message
 set shortmess+=I
+
+" Jump to start/end with %
+runtime macros/matchit.vim
 
 colorscheme Monokai
