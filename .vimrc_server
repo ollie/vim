@@ -1,0 +1,33 @@
+" Tabs and spaces
+set ts=2 sts=2 sw=2 noexpandtab
+
+" Turn syntax highlighting on
+syntax on
+
+" Show line numbers
+set number
+
+" Show all whitespaces as a character
+set list
+
+" Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
+" Show hidden symbols
+set listchars=tab:▸\ ,eol:¬
+
+" tabn mapping with shift+tab
+noremap <silent> <S-Tab> :tabn<CR>
+
+" Mouse scrolling
+set mouse=n
+
+" Highlight current line
+set cursorline
+
+" Highlight search results, better than *?
+set hlsearch
+
+" Don't show the intro message
+set shortmess+=I
