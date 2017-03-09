@@ -13,22 +13,22 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugin 'vim-ruby/vim-ruby'              " Who uses this?
-Plugin 'ervandew/supertab'              " Use <Tab> for competions
-Plugin 'tomtom/tlib_vim'                " Utility functions for SnipMate
-Plugin 'garbas/vim-snipmate'            " Snipptes for completions
-Plugin 'MarcWeber/vim-addon-mw-utils'   " Probably some utility functions
-Plugin 'honza/vim-snippets'             " Snippets for SnipMate
-Plugin 'scrooloose/syntastic'           " Syntax checker
-Plugin 'rking/ag.vim'                   " ag searcher support, :Ag
-Plugin 'scrooloose/nerdtree'            " Side panel with file tree, :NERDTree
+" Plugin 'ervandew/supertab'              " Use <Tab> for competions
+" Plugin 'tomtom/tlib_vim'                " Utility functions for SnipMate
+" Plugin 'garbas/vim-snipmate'            " Snipptes for completions
+" Plugin 'MarcWeber/vim-addon-mw-utils'   " Probably some utility functions
+" Plugin 'honza/vim-snippets'             " Snippets for SnipMate
+" Plugin 'scrooloose/syntastic'           " Syntax checker
+" Plugin 'rking/ag.vim'                   " ag searcher support, :Ag
+" Plugin 'scrooloose/nerdtree'            " Side panel with file tree, :NERDTree
 Plugin 'bling/vim-airline'              " Nifty bottom line
 Plugin 'flazz/vim-colorschemes'         " A lot of color schemes
-Plugin 'tpope/vim-fugitive'             " Git integration, :Git ...
-Plugin 'slim-template/vim-slim'         " Ruby Slim for vim
-Plugin 'ntpeters/vim-better-whitespace' " Highlight and strip whitespace, :StripWhitespace
-Plugin 'ngmy/vim-rubocop'               " Rubocop integration, :RuboCop
-Plugin 'skalnik/vim-vroom'              " Test runner, :VroomRunTestFile
-Plugin 'tpope/vim-commentary'           " Comment out code, gc, gcc, :Commentary
+" Plugin 'tpope/vim-fugitive'             " Git integration, :Git ...
+" Plugin 'slim-template/vim-slim'         " Ruby Slim for vim
+" Plugin 'ntpeters/vim-better-whitespace' " Highlight and strip whitespace, :StripWhitespace
+" Plugin 'ngmy/vim-rubocop'               " Rubocop integration, :RuboCop
+" Plugin 'skalnik/vim-vroom'              " Test runner, :VroomRunTestFile
+" Plugin 'tpope/vim-commentary'           " Comment out code, gc, gcc, :Commentary
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,5 +87,8 @@ set shortmess+=I
 
 " Jump to start/end with %
 runtime macros/matchit.vim
+
+" Make backspace key work
+set backspace=indent,eol,start
 
 colorscheme Monokai
